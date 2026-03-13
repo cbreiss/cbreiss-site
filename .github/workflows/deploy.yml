@@ -16,6 +16,8 @@ jobs:
           HOST:    ${{ secrets.DREAMHOST_HOST }}
           USER:    ${{ secrets.DREAMHOST_USER }}
         run: |
+          HOST=$(echo "$HOST" | tr -d '[:space:]')
+          USER=$(echo "$USER" | tr -d '[:space:]')
           mkdir -p ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
