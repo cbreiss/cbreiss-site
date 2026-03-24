@@ -194,3 +194,38 @@ footer p + p { margin-top: 0.4rem; }
 
   .section-inner { padding: 2rem 1.2rem; }
 }
+
+/* ── Footnote tooltip ────────────────────────────────────────────── */
+.footnote-ref {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.footnote-ref sup {
+  color: var(--link);
+  font-size: 0.75em;
+}
+
+.footnote-tip {
+  display: none;
+  position: absolute;
+  bottom: 1.6em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.5em 0.8em;
+  width: 260px;
+  font-size: 0.85em;
+  line-height: 1.4;
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 10;
+  white-space: normal;
+}
+
+.footnote-ref:hover .footnote-tip {
+  display: block;
+}
