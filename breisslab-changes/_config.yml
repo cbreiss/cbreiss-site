@@ -1,10 +1,10 @@
 # Site Settings
 title: "Breiss Lab"
-subtitle: "Computational and Experimental Linguistics"
-email: cbreiss@usc.edu
+subtitle: "Computational Psychophonology"
+email: cbreiss@uchicago.edu
 description: >-
-  Breiss Lab studies phonology using computational and experimental methods,
-  with interests in learning, phonological representations, and the
+  The Breiss Lab studies phonology using computational and experimental methods,
+  with interests in learning, interacting phonological processes, and the
   phonology-morphosyntax-lexicon interface.
 baseurl: "" # empty for custom domain deployment
 url: "https://lab.cbreiss.com"
@@ -18,9 +18,9 @@ minimal_mistakes_skin: "default"
 author:
   name: "Canaan Breiss"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Assistant Professor, USC Linguistics"
-  location: "University of Southern California"
-  email: "cbreiss@usc.edu"
+  bio: "Assistant Professor, UChicago Linguistics"
+  location: "University of Chicago"
+  email: "cbreiss@uchicago.edu"
   links:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
