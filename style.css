@@ -154,6 +154,28 @@ section:nth-child(even) {
 
 .section-inner p + p { margin-top: 0.9rem; }
 
+/* ── News ───────────────────────────────────────────────────────── */
+.news-list { list-style: none; }
+
+.news-list li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.news-list li:last-child { border-bottom: none; }
+
+.news-date {
+  flex-shrink: 0;
+  width: 7rem;
+  color: var(--secondary);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-top: 0.15rem;
+}
+
 /* ── Footer ─────────────────────────────────────────────────────── */
 footer {
   text-align: center;
@@ -193,6 +215,9 @@ footer p + p { margin-top: 0.4rem; }
   .profile-photo { width: 140px; height: 140px; }
 
   .section-inner { padding: 2rem 1.2rem; }
+
+  .news-list li { flex-direction: column; gap: 0.15rem; }
+  .news-date { width: auto; padding-top: 0; }
 }
 
 /* ── Footnote tooltip ────────────────────────────────────────────── */
